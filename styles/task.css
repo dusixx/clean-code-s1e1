@@ -10,6 +10,7 @@
 
 .task__check {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .task__input,
