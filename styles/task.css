@@ -1,11 +1,11 @@
 .task {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
 }
 
 .task__check {
@@ -14,8 +14,8 @@
 
 .task__input,
 .task__label {
-  width: 56%;
   display: inline-block;
+  width: 56%;
   flex-grow: 1;
 }
 
@@ -56,6 +56,6 @@ Misc
 }
 
 .completed__tasks .task__label {
-  text-decoration: line-through;
   color: #888;
+  text-decoration: line-through;
 }
