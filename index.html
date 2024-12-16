@@ -37,7 +37,7 @@
           <li class="task task_edit">
             <input class="task__check" type="checkbox">
             <label class="task__label">Go Shopping</label>
-            <input class="task__input text-input-primary" type="text">
+            <input class="task__input text-input-primary" type="text" value="Go Shopping">
             <button class="task__edit btn-primary" type="button">Save</button>
             <button class="task__delete btn-primary" type="button" aria-label="Remove task">
               <img class="task__icon" src="./remove.svg" alt="Remove task button icon">
@@ -50,7 +50,7 @@
         <h3 class="section-title">Completed</h3>
         <ul class="completed__tasks tasks">
           <li class="task">
-            <input class="task__check" type="checkbox">
+            <input class="task__check" type="checkbox" checked>
             <label class="task__label">See the Doctor</label>
             <input class="task__input text-input-primary" type="text">
             <button class="task__edit btn-primary" type="button">Edit</button>
@@ -61,6 +61,6 @@
         </ul>
       </section>
     </main>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
