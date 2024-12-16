@@ -23,7 +23,7 @@ button{
 Base
 --------------
 */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -35,7 +35,7 @@ body {
   margin: 0 auto 0;
 }
 
-button {
+.btn-primary {
   background: none;
   border: 0px;
   color: #888;
@@ -45,12 +45,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn-primary:hover {
   color: #3a3a3a;
 }
 
-h3,
-label[for="new-task"] {
+.section-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -60,7 +59,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.text-input-primary {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -73,7 +72,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.text-input-primary:focus {
   color: #333;
 }
 
@@ -89,7 +88,7 @@ Header
   text-align: right;
 }
 
-.header img {
+.header__img {
   width: 100%;
 }
 
@@ -114,7 +113,7 @@ Task
   flex-grow: 1;
 }
 
-li {
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -124,46 +123,42 @@ li {
   align-items: center;
 }
 
-li > * {
-  vertical-align: middle;
-}
-
-li > input[type="checkbox"] {
+.task__check {
   margin: 0 10px;
 }
 
-li > label {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.task__input {
   width: 226px;
 }
 
-button.task__delete img {
+.task__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.task__delete img:hover {
+.task__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task__input {
   display: none;
 }
 
-ul li.task_edit input[type=text] {
+.task_edit .task__input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.task_edit label {
+.task_edit .task__label {
   display: none;
 }
 
@@ -176,16 +171,16 @@ Misc
   display: flex;
 }
 
-label[for="new-task"] {
+.add-task .section-title {
   display: block;
   margin: 0 0 20px;
 }
 
-input.add-task__input {
+.add-task__input {
   width: 318px;
 }
 
-ul.completed__tasks label {
+.completed__tasks .task__label {
   text-decoration: line-through;
   color: #888;
 }
