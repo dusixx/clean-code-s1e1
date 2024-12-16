@@ -1,0 +1,61 @@
+.task {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__check {
+  margin: 0 10px;
+}
+
+.task__input,
+.task__label {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.task__icon {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.task__icon:hover {
+  transform: rotateZ(0);
+}
+
+.task_edit .task__input {
+  display: inline-block;
+  width: 224px;
+}
+
+.task__input,
+.task_edit .task__label {
+  display: none;
+}
+
+/*
+--------------
+Misc
+--------------
+*/
+.add-task__group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.add-task__input {
+  flex-grow: 1;
+}
+
+.completed__tasks .task__label {
+  text-decoration: line-through;
+  color: #888;
+}

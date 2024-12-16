@@ -1,0 +1,21 @@
+.header {
+  text-align: right;
+}
+
+.header.wrapper {
+  padding-top: 10px;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__more {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+  .header { 
+    text-align: center;
+  }
+}
