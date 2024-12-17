@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h2,
+h3, 
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
